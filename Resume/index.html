@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      *::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #f5f5f5;
+      }
+
+      *::-webkit-scrollbar {
+        width: 10px;
+        background-color: #f5f5f5;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: rgb(59, 3, 3);
+
+        background-image: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          color-stop(0.5, rgba(255, 255, 255, 0.2)),
+          color-stop(0.5, transparent),
+          to(transparent)
+        );
+      }
+
+      body {
+        height: 200vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #f5f5f5;
+      }
+      .section1 {
+        width: 75%;
+        height: 10rem;
+        background: #AA076B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .profile-img-section {
+        width: 40%;
+        height: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      .profile-details {
+        width: 60%;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .profile-img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.15);
+      }
+      .section2 {
+        width: 75%;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .section3 {
+        width: 75%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .section-title {
+        margin-bottom: 10px;
+      }
+      .ed-table {
+        width: 75vw;
+        border: 1px solid gray;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 5px;
+      }
+      .section4 {
+        width: 75%;
+        height: 30rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      span {
+        font-weight: bold;
+        font-size: larger;
+        margin-top: 2rem;
+        color: purple;
+      }
+      .section5 {
+        width: 75vw;
+        height: 8rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+     th{
+      background: #AA076B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: white
+
+      }
+       ul,
+      li {
+        margin-left: 1rem;
+      }
+      .section6 {
+        width: 75vw;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .section6 .box {
+        width: 75vw;
+        height: 2rem;
+        background-color: purple;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .headerColor h1{
+        color: rgb(41, 23, 41);
+      }
+      .headerColor h3{
+        color: purple;
+      }
+      .section6 .box a{
+        text-decoration: none;
+        color: white 
+      }
+      .btn{
+        width: 80px;
+        height: 20px;
+        padding: 5px;
+        background-color: purple;
+        text-decoration: none;
+        border-radius: 10%;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section1">
+      <div class="profile-img-section">
+        <img
+          src="./IMG_20230121_213841.jpg"
+          alt="image"
+          class="profile-img"
+        />
+      </div>
+      <div class="profile-details">
+        <h1>Balaji A</h1>
+        <h3>abalaji1672003@gmail.com</h3>
+      </div>
+    </div>
+    <div class="section2 headerColor">
+      <h1 class="section-title">Objective</h1>
+      <p>
+        I am highly motivated abs results sales professionals my skills and
+        experience in a dynamic slaes and environment
+      </p>
+    </div>
+    <div class="section3 headerColor">
+      <h1 class="section-title">Education</h1>
+      <table class="ed-table">
+        <tr>
+          <th>Degree</th>
+          <th>Campus</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>SSLC</td>
+          <td>S.H.N Edward Higher Secondary School</td>
+          <td>77.6%</td>
+        </tr>
+        <tr>
+          <td>HRSEC</td>
+          <td>S.H.N Edward Higher Secondary School</td>
+          <td>86.4%</td>
+        </tr>
+        <tr>
+          <td>BE</td>
+          <td>Sri Shakthi Institute of Engineering And Technology</td>
+          <td>78%</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section4 headerColor">
+      <h1 class="section-title">Projects</h1>
+      <p>
+        <span>Home Rental Application</span><br />The application which is used to book the houses through online also the people can register their property.
+      </p>
+      <h3 class="headerColor">stacks that i used in this project</h3>
+      <ul>
+        <li>Mongo DB</li>
+        <li>React</li>
+        <li>Express</li>
+        <li>Node</li>
+      </ul>
+     <a href="https://github.com/BALAJI1672003/Guest-RoomBooking-Application" class="btn">view code</a>
+      <p>
+        <span>Connect-All</span><br />It is messaging site where the people can send the message to their friend use this application
+      </p>
+      <h3 class="headerColor">stacks that i used in this project</h3>
+      <ul>
+        <li>Mongo DB</li>
+        <li>React</li>
+        <li>Express</li>
+        <li>Node</li>
+      </ul>
+    </div>
+    <div class="section5 headerColor">
+      <h1>Skills</h1>
+      <ul>
+        <li>JAVA</li>
+        <li>MYSQL</li>
+        <li>MERN</li>
+        <li>OOPS</li>
+      </ul>
+    </div>
+    <div class="section6">
+      <div class="box">
+        <a href="tel:+91 9342157569">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="mailto:abalaji1672003@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/BALAJI1672003">
+            <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+    <Script src="index.js"></Script>
+  </body>
+</html>
